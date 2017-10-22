@@ -1,0 +1,77 @@
+" ---------- From default ----------
+" Plug 'christoomey/vim-run-interactive'
+" Plug 'ctrlpvim/ctrlp.vim'
+" Plug 'elixir-lang/vim-elixir'
+" Plug 'fatih/vim-go'
+" Plug 'janko-m/vim-test'
+" Plug 'kchmck/vim-coffee-script'
+" Plug 'pangloss/vim-javascript'
+" Plug 'pbrisbin/vim-mkdir'
+" Plug 'slim-template/vim-slim'
+" Plug 'tpope/vim-bundler'
+" Plug 'tpope/vim-endwise'
+" Plug 'tpope/vim-eunuch'
+" Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-projectionist'
+" Plug 'tpope/vim-rails'
+" Plug 'tpope/vim-rake'
+" Plug 'tpope/vim-repeat'
+" Plug 'tpope/vim-rhubarb'
+" Plug 'tpope/vim-surround'
+" Plug 'vim-ruby/vim-ruby'
+" Plug 'vim-scripts/tComment'
+
+
+
+" ---------- Disable ----------
+UnPlug 'vim-run-interactive'
+UnPlug 'ctrlp.vim'
+UnPlug 'vim-elixir'
+UnPlug 'vim-go'
+
+
+
+" ---------- New ----------
+Plug 'scrooloose/nerdtree'
+Plug 'junegunn/fzf.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'kristijanhusak/vim-multiple-cursors'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'airblade/vim-gitgutter'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'sheerun/vim-polyglot'
+Plug 'w0rp/ale'
+Plug 'mileszs/ack.vim'
+Plug 'benmills/vimux'
+
+
+" ---------- From old dotfiles ----------
+" Plug 'chrisbra/color_highlight.git'
+" Plug 'skwp/vim-colors-solarized'
+" Plug 'jby/tmux.vim.git'
+
+" Required for Gblame in terminal vim
+" Plug 'godlygeek/csapprox.git'
+
+" Plug 'tpope/vim-git'
+
+" Plug 'scrooloose/syntastic.git'
+" Plug 'mxw/vim-jsx'
+
+" Plug 'xolox/vim-misc'
+
+" Plug 'benmills/vimux'
+" Plug 'roman/golden-ratio'
+
+" Plug 'keith/rspec.vim'
+
+" Plug 'thoughtbot/vim-rspec'
+
+" Plug 'rking/ag.vim'
+" Plug 'henrik/vim-indexed-search'
+" Plug 'skwp/greplace.vim'
+
+" Plug 'xolox/vim-easytags'
+
+" Plug 'Shougo/neocomplete.git'
+" Plug 'mattn/webapi-vim.git'

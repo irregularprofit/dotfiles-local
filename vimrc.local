@@ -1,0 +1,50 @@
+let mapleader = ","
+
+" split windows to the bottom and right
+set splitbelow
+set splitright
+" opens a vertical split and switches over
+nnoremap <leader>\| <C-w>v<C-w>l
+" pens a horizontal split and switches over
+nnoremap <leader>- <C-w>s<C-w>j
+
+" maps the , to colon
+nmap ; :
+" leader+w to save
+nnoremap <Leader>w :w<CR>
+" leader+wa to save all
+nnoremap <Leader>wa :wa<CR>
+" leader+q to quit
+nnoremap <Leader>q :q<CR>
+
+" quick escape
+imap jk <Esc>
+
+" capital Q to force quit
+command -nargs=0 Quit :qa!
+
+
+
+" ================ Code Formatting ================
+
+" format the entire file
+nmap <leader>fef mzgg=G`z<CR>
+" F3 key to convert hash syntax
+map <F3> :%s/:\([^ ]*\)\(\s*\)=>/\1:/g<CR>
+
+" ================ Folds ============================
+
+set foldmethod=indent   "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set foldlevelstart=10   "start folding only when level is 10
+set foldenable          "fold by default
+
+
+set t_Co=256   " This is may or may not needed.
+
+set background=dark
+colorscheme PaperColor
+
+
+
+set rtp+=/usr/local/opt/fzf

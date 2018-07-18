@@ -1,24 +1,19 @@
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-
-export RAILS_NO_DEBUG_ASSETS=true
-
-export SILENCE_RBENV_DEPRECATION=1
-
 # specific to work computer
-export BOXEN_SOCKET_DIR=/usr/local/var/project-sockets
-export GOPATH="$HOME/src/go"
-export PATH=/usr/local/Cellar/postgresql@9.6/9.6.6/bin:$PATH:$GOPATH/bin
-
-[ -f /Users/jimmy_hsu/.travis/travis.sh ] && source /Users/jimmy_hsu/.travis/travis.sh
-
 if [ "$USER" = "jimmy_hsu" ]; then
   eval "$(rbenv init -)"
 
   export NVM_DIR="/Users/jimmy_hsu/.nvm"
   [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
   [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
-fi;
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+  export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+  export RAILS_NO_DEBUG_ASSETS=true
+  export SILENCE_RBENV_DEPRECATION=1
+  export BOXEN_SOCKET_DIR=/usr/local/var/project-sockets
+  export GOPATH="$HOME/src/go"
+  export PATH="/usr/local/Cellar/postgresql@9.6/9.6.9/bin:$GOPATH/bin/$(brew --prefix qt@5.5)/bin:$PATH"
+
+  [ -f /Users/jimmy_hsu/.travis/travis.sh ] && source /Users/jimmy_hsu/.travis/travis.sh
+fi;

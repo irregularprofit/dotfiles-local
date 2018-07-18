@@ -22,13 +22,11 @@
 " Plug 'vim-scripts/tComment'
 
 
-
 " ---------- Disable ----------
 UnPlug 'vim-run-interactive'
 UnPlug 'ctrlp.vim'
 UnPlug 'vim-elixir'
 UnPlug 'vim-go'
-
 
 
 " ---------- New ----------
@@ -43,6 +41,14 @@ Plug 'sheerun/vim-polyglot'
 Plug 'w0rp/ale'
 Plug 'mileszs/ack.vim'
 Plug 'benmills/vimux'
+
+
+" ---------- Color ----------
+Plug 'flazz/vim-colorschemes'
+Plug 'rafi/awesome-vim-colorschemes'
+Plug 'chriskempson/base16-vim'
+Plug 'xolox/vim-colorscheme-switcher'
+Plug 'xolox/vim-misc'
 
 
 " ---------- From old dotfiles ----------

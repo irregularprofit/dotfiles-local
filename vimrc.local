@@ -48,3 +48,5 @@ colorscheme PaperColor
 
 
 set rtp+=/usr/local/opt/fzf
+
+set colorcolumn=0

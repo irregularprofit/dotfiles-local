@@ -43,7 +43,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'sheerun/vim-polyglot'
 Plug 'mileszs/ack.vim'
 Plug 'benmills/vimux'
-
+Plug 'simeji/winresizer'
+Plug 'TaDaa/vimade'
 
 " ---------- Color ----------
 Plug 'flazz/vim-colorschemes'

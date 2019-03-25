@@ -46,6 +46,7 @@ Plug 'benmills/vimux'
 Plug 'simeji/winresizer'
 Plug 'TaDaa/vimade'
 
+
 " ---------- Color ----------
 Plug 'flazz/vim-colorschemes'
 Plug 'rafi/awesome-vim-colorschemes'
@@ -54,6 +55,15 @@ Plug 'xolox/vim-colorscheme-switcher'
 Plug 'xolox/vim-misc'
 Plug 'NLKNguyen/papercolor-theme'
 
+
+" ---------- Dangerous ----------
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 
 " ---------- From old dotfiles ----------
 " Plug 'chrisbra/color_highlight.git'

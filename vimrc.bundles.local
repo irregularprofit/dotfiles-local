@@ -37,7 +37,6 @@ UnPlug 'slim-template/vim-slim'
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
-Plug 'kristijanhusak/vim-multiple-cursors'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'airblade/vim-gitgutter'
 Plug 'sheerun/vim-polyglot'
@@ -65,25 +64,3 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 
-" ---------- From old dotfiles ----------
-" Plug 'chrisbra/color_highlight.git'
-" Plug 'skwp/vim-colors-solarized'
-" Plug 'jby/tmux.vim.git'
-
-" Required for Gblame in terminal vim
-" Plug 'godlygeek/csapprox.git'
-
-" Plug 'tpope/vim-git'
-" Plug 'scrooloose/syntastic.git'
-" Plug 'mxw/vim-jsx'
-" Plug 'xolox/vim-misc'
-" Plug 'benmills/vimux'
-" Plug 'roman/golden-ratio'
-" Plug 'keith/rspec.vim'
-" Plug 'thoughtbot/vim-rspec'
-" Plug 'rking/ag.vim'
-" Plug 'henrik/vim-indexed-search'
-" Plug 'skwp/greplace.vim'
-" Plug 'xolox/vim-easytags'
-" Plug 'Shougo/neocomplete.git'
-" Plug 'mattn/webapi-vim.git'

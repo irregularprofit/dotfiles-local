@@ -34,6 +34,7 @@ UnPlug 'slim-template/vim-slim'
 
 
 " ---------- New ----------
+Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'christoomey/vim-tmux-navigator'

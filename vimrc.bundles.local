@@ -1,14 +1,18 @@
-" ---------- From default ----------
+" ---------- Default ----------
+" Define bundles via Github repos
 " Plug 'christoomey/vim-run-interactive'
-" Plug 'ctrlpvim/ctrlp.vim'
+" if executable('fzf')
+"   Plug '/usr/local/opt/fzf'
+" else
+"   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+" endif
+" Plug 'junegunn/fzf.vim'
 " Plug 'elixir-lang/vim-elixir'
 " Plug 'fatih/vim-go'
-" Plug 'kchmck/vim-coffee-script'
-" Plug 'pangloss/vim-javascript'
-" Plug 'slim-template/vim-slim'
-"
 " Plug 'janko-m/vim-test'
+" Plug 'pangloss/vim-javascript'
 " Plug 'pbrisbin/vim-mkdir'
+" Plug 'slim-template/vim-slim'
 " Plug 'tpope/vim-bundler'
 " Plug 'tpope/vim-endwise'
 " Plug 'tpope/vim-eunuch'
@@ -21,46 +25,53 @@
 " Plug 'tpope/vim-surround'
 " Plug 'vim-ruby/vim-ruby'
 " Plug 'vim-scripts/tComment'
+"
+" if g:has_async
+"   Plug 'dense-analysis/ale'
+" endif
 
 
 " ---------- Disable ----------
-UnPlug 'vim-run-interactive'
-UnPlug 'ctrlp.vim'
-UnPlug 'vim-elixir'
-UnPlug 'vim-go'
-UnPlug 'kchmck/vim-coffee-script'
-UnPlug 'pangloss/vim-javascript'
+UnPlug 'elixir-lang/vim-elixir'
+UnPlug 'pbrisbin/vim-mkdir'
 UnPlug 'slim-template/vim-slim'
+UnPlug 'tpope/vim-bundler'
+UnPlug 'tpope/vim-endwise'
+UnPlug 'tpope/vim-eunuch'
+UnPlug 'tpope/vim-rails'
+UnPlug 'tpope/vim-rake'
+UnPlug 'tpope/vim-repeat'
+UnPlug 'tpope/vim-rhubarb'
+UnPlug 'tpope/vim-surround'
+UnPlug 'vim-ruby/vim-ruby'
 
 
 " ---------- New ----------
-Plug 'scrooloose/nerdtree'
-Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'airblade/vim-gitgutter'
-Plug 'sheerun/vim-polyglot'
 Plug 'mileszs/ack.vim'
 Plug 'benmills/vimux'
-Plug 'simeji/winresizer'
-Plug 'TaDaa/vimade'
+Plug 'scrooloose/nerdtree'
+" Plug 'airblade/vim-gitgutter'
+" Plug 'sheerun/vim-polyglot'
+" Plug 'simeji/winresizer'
+" Plug 'TaDaa/vimade'
 
 
 " ---------- Color ----------
-Plug 'flazz/vim-colorschemes'
-Plug 'rafi/awesome-vim-colorschemes'
-Plug 'chriskempson/base16-vim'
-Plug 'xolox/vim-colorscheme-switcher'
-Plug 'xolox/vim-misc'
+" Plug 'flazz/vim-colorschemes'
+" Plug 'rafi/awesome-vim-colorschemes'
+" Plug 'chriskempson/base16-vim'
+" Plug 'xolox/vim-colorscheme-switcher'
+" Plug 'xolox/vim-misc'
 Plug 'NLKNguyen/papercolor-theme'
 
 
 " ---------- Dangerous ----------
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-
+" if has('nvim')
+"   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" else
+"   Plug 'Shougo/deoplete.nvim'
+"   Plug 'roxma/nvim-yarp'
+"   Plug 'roxma/vim-hug-neovim-rpc'
+" endif

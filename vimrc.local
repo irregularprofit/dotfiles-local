@@ -23,8 +23,6 @@ imap jk <Esc>
 " capital Q to force quit
 command -nargs=0 Quit :qa!
 
-
-
 " ================ Code Formatting ================
 
 " format the entire file
@@ -39,13 +37,10 @@ set foldnestmax=10      "deepest fold is 10 levels
 set foldlevelstart=10   "start folding only when level is 10
 set foldenable          "fold by default
 
-
 set t_Co=256   " This is may or may not needed.
 
 set background=dark
 colorscheme PaperColor
-
-
 
 set rtp+=/usr/local/opt/fzf
 

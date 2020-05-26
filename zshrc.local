@@ -13,7 +13,8 @@ if [ "$USER" = "jimmy_hsu" ]; then
   export SILENCE_RBENV_DEPRECATION=1
   export BOXEN_SOCKET_DIR=/usr/local/var/project-sockets
   export GOPATH="$HOME/src/go"
-  export PATH="/usr/local/opt/postgresql@9.6/bin:$GOPATH/bin:$(brew --prefix qt@5.5)/bin:$PATH"
+  export DEBUG_RSPEC=true
+  export PATH="/usr/local/opt/postgresql@9.6/bin:$GOPATH/bin:$PATH"
 
   [ -f /Users/jimmy_hsu/.travis/travis.sh ] && source /Users/jimmy_hsu/.travis/travis.sh
 fi;

@@ -6,6 +6,7 @@
 " else
 "   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " endif
+"
 " Plug 'junegunn/fzf.vim'
 " Plug 'elixir-lang/vim-elixir'
 " Plug 'fatih/vim-go'
@@ -30,10 +31,10 @@
 "   Plug 'dense-analysis/ale'
 " endif
 
-
 " ---------- Disable ----------
 UnPlug 'elixir-lang/vim-elixir'
-UnPlug 'pbrisbin/vim-mkdir'
+UnPlug 'fatih/vim-go'
+UnPlug 'pangloss/vim-javascript'
 UnPlug 'slim-template/vim-slim'
 UnPlug 'tpope/vim-bundler'
 UnPlug 'tpope/vim-endwise'
@@ -45,33 +46,13 @@ UnPlug 'tpope/vim-rhubarb'
 UnPlug 'tpope/vim-surround'
 UnPlug 'vim-ruby/vim-ruby'
 
-
 " ---------- New ----------
 Plug 'itchyny/lightline.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'mileszs/ack.vim'
 Plug 'benmills/vimux'
 Plug 'scrooloose/nerdtree'
-" Plug 'airblade/vim-gitgutter'
-" Plug 'sheerun/vim-polyglot'
-" Plug 'simeji/winresizer'
-" Plug 'TaDaa/vimade'
-
+Plug 'sheerun/vim-polyglot'
 
 " ---------- Color ----------
-" Plug 'flazz/vim-colorschemes'
-" Plug 'rafi/awesome-vim-colorschemes'
-" Plug 'chriskempson/base16-vim'
-" Plug 'xolox/vim-colorscheme-switcher'
-" Plug 'xolox/vim-misc'
 Plug 'NLKNguyen/papercolor-theme'
-
-
-" ---------- Dangerous ----------
-" if has('nvim')
-"   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" else
-"   Plug 'Shougo/deoplete.nvim'
-"   Plug 'roxma/nvim-yarp'
-"   Plug 'roxma/vim-hug-neovim-rpc'
-" endif

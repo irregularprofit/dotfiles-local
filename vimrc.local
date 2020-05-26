@@ -45,3 +45,5 @@ colorscheme PaperColor
 set rtp+=/usr/local/opt/fzf
 
 set colorcolumn=0
+
+set pastetoggle=<F2>

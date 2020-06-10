@@ -6,11 +6,9 @@ if [ "$USER" = "jimmy_hsu" ]; then
 
   export NVM_DIR="/Users/jimmy_hsu/.nvm"
   [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-  [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
 
   export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
   export RAILS_NO_DEBUG_ASSETS=true
-  export SILENCE_RBENV_DEPRECATION=1
   export BOXEN_SOCKET_DIR=/usr/local/var/project-sockets
   export GOPATH="$HOME/src/go"
   export DEBUG_RSPEC=true
@@ -18,3 +16,5 @@ if [ "$USER" = "jimmy_hsu" ]; then
 
   [ -f /Users/jimmy_hsu/.travis/travis.sh ] && source /Users/jimmy_hsu/.travis/travis.sh
 fi;
+
+[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn

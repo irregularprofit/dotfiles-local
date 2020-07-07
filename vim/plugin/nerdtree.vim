@@ -18,4 +18,4 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " close vim if nerdtree is the only window left
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-let NERDTreeIgnore=['\.png$', '\.jpg$', '\.gif$', 'bin$[[dir]]', 'script$[[dir]]', 'tmp$[[dir]]', 'log$[[dir]]', 'public/uploads$[[dir]]', '^doc[[dir]]', 'node_modules$[[dir]]', '\.docker$', '\.idea$', '\.git$', '\.github$', '\.lefthook$', '\.bundle$', '\.semaphore$']
+let NERDTreeIgnore=['\.png$', '\.jpg$', '\.gif$', 'bin$[[dir]]', 'script$[[dir]]', 'tmp$[[dir]]', 'log$[[dir]]', 'public/uploads$[[dir]]', '^doc[[dir]]', 'node_modules$[[dir]]', '\.idea$', '\.git$', '\.github$', '\.lefthook$', '\.bundle$', '\.semaphore$', '\.DS_Store']

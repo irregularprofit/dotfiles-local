@@ -1,5 +1,3 @@
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # specific to work computer
 if [ "$USER" = "jimmy_hsu" ]; then
   eval "$(rbenv init -)"
@@ -16,5 +14,7 @@ if [ "$USER" = "jimmy_hsu" ]; then
 
   [ -f /Users/jimmy_hsu/.travis/travis.sh ] && source /Users/jimmy_hsu/.travis/travis.sh
 fi;
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 [[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn

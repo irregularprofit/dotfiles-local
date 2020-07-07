@@ -53,6 +53,7 @@ Plug 'mileszs/ack.vim'
 Plug 'benmills/vimux'
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
+Plug 'craigemery/vim-autotag'
 
 " ---------- Color ----------
 Plug 'NLKNguyen/papercolor-theme'

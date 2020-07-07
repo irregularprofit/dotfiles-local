@@ -62,7 +62,7 @@
 
 [user]
   name = Jimmy Hsu
-  email = irregular.profit@gmail.com
+  email = jimmy.hsu@wegalvanize.com
 [github]
   user = irregularprofit
   token = <%= print("GitHub API Token: "); STDOUT.flush; STDIN.gets.chomp %>

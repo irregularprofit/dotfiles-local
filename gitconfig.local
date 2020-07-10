@@ -59,6 +59,8 @@
   helper = osxkeychain
 [help]
   autocorrect = 1
+[pull]
+  ff = only
 
 [user]
   name = Jimmy Hsu

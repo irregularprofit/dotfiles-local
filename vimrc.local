@@ -47,3 +47,6 @@ set rtp+=/usr/local/opt/fzf
 set colorcolumn=0
 
 set pastetoggle=<F2>
+
+" Print TAGS in status-line when Gutentags is generating tags
+set statusline+=%{gutentags#statusline()}

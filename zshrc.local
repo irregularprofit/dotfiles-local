@@ -12,6 +12,8 @@ if [ "$USER" = "jimmy_hsu" ]; then
   export DEBUG_RSPEC=true
   export PATH="/usr/local/opt/postgresql@9.6/bin:$GOPATH/bin:$PATH"
 
+  export PATH="/usr/local/opt/terraform@0.11/bin:$PATH"
+
   [ -f /Users/jimmy_hsu/.travis/travis.sh ] && source /Users/jimmy_hsu/.travis/travis.sh
 fi;
 

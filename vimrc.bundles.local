@@ -14,6 +14,7 @@
 " Plug 'pangloss/vim-javascript'
 " Plug 'pbrisbin/vim-mkdir'
 " Plug 'slim-template/vim-slim'
+
 " Plug 'tpope/vim-bundler'
 " Plug 'tpope/vim-endwise'
 " Plug 'tpope/vim-eunuch'
@@ -34,17 +35,8 @@
 " ---------- Disable ----------
 UnPlug 'elixir-lang/vim-elixir'
 UnPlug 'fatih/vim-go'
-UnPlug 'pangloss/vim-javascript'
-UnPlug 'slim-template/vim-slim'
 UnPlug 'tpope/vim-bundler'
-UnPlug 'tpope/vim-endwise'
 UnPlug 'tpope/vim-eunuch'
-UnPlug 'tpope/vim-rails'
-UnPlug 'tpope/vim-rake'
-UnPlug 'tpope/vim-repeat'
-UnPlug 'tpope/vim-rhubarb'
-UnPlug 'tpope/vim-surround'
-UnPlug 'vim-ruby/vim-ruby'
 
 " ---------- New ----------
 Plug 'itchyny/lightline.vim'

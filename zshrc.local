@@ -10,11 +10,18 @@ if [ "$USER" = "jimmy_hsu" ]; then
   export BOXEN_SOCKET_DIR=/usr/local/var/project-sockets
   export GOPATH="$HOME/src/go"
   export DEBUG_RSPEC=true
-  export PATH="/usr/local/opt/postgresql@9.6/bin:$GOPATH/bin:$PATH"
+  export PATH="$GOPATH/bin:$PATH"
 
   export PATH="/usr/local/opt/terraform@0.11/bin:$PATH"
+  export PATH="/usr/local/opt/postgresql@12/bin:$PATH"
 
-  [ -f /Users/jimmy_hsu/.travis/travis.sh ] && source /Users/jimmy_hsu/.travis/travis.sh
+  export HIGHBOND_LOCAL_API_TOKEN="733h8r8z45"
+  export HIGHBOND_PLAYGROUND_API_TOKEN="eb5c440d7d843e1e6644e644e8651cf946df2711dfa3c8f5e546ebbe74409a51"
+  export HIGHBOND_STAGING_API_TOKEN="e673cd2401f6436b16a165066993532f3e2970be5531406d37ac8591220a00b3"
+  export HIGHBOND_PREPROD_API_TOKEN="f2f20b5cdd446282a5df145422117e439c1c771f3d791ee03fdc2774367ee7ea"
+  export HIGHBOND_PROD_API_TOKEN="733h8r8z45"
+
+  export GOPRIVATE=github.com/acl-services
 fi;
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

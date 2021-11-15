@@ -49,3 +49,5 @@ Plug 'ludovicchabant/vim-gutentags'
 
 " ---------- Color ----------
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'nanotech/jellybeans.vim'
+Plug 'morhetz/gruvbox'

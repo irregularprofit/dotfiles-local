@@ -42,7 +42,11 @@ set t_Co=256   " This is may or may not needed.
 set background=dark
 colorscheme jellybeans
 
-set rtp+=/usr/local/opt/fzf
+if $USER == "jhsu"
+  set rtp+=/opt/homebrew/opt/fzf
+else
+  set rtp+=/usr/local/opt/fzf
+endif
 
 set colorcolumn=0
 

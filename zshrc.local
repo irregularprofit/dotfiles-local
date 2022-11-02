@@ -2,9 +2,6 @@
 if [ "$USER" = "jimmy_hsu" ]; then
   eval "$(rbenv init -)"
 
-  export NVM_DIR="/Users/jimmy_hsu/.nvm"
-  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
   export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
   export RAILS_NO_DEBUG_ASSETS=true
   export BOXEN_SOCKET_DIR=/usr/local/var/project-sockets
@@ -22,7 +19,49 @@ if [ "$USER" = "jimmy_hsu" ]; then
   export HIGHBOND_PROD_API_TOKEN="733h8r8z45"
 
   export GOPRIVATE=github.com/acl-services
+
+  export NVM_DIR="/Users/jimmy_hsu/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 fi;
+
+if [ "$USER" = "jhsu" ]; then
+  eval "$(rbenv init -)"
+
+  export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+  export RAILS_NO_DEBUG_ASSETS=true
+  export BOXEN_SOCKET_DIR=/usr/local/var/project-sockets
+  export GOPATH="$HOME/src/go"
+  export DEBUG_RSPEC=true
+  export PATH="/opt/homebrew/bin:$GOPATH/bin:$PATH"
+
+  # export PATH="/usr/local/opt/terraform@0.11/bin:$PATH"
+  # export PATH="/usr/local/opt/postgresql@12/bin:$PATH"
+
+  export HIGHBOND_LOCAL_API_TOKEN="733h8r8z45"
+  export HIGHBOND_PLAYGROUND_API_TOKEN="eb5c440d7d843e1e6644e644e8651cf946df2711dfa3c8f5e546ebbe74409a51"
+  export HIGHBOND_STAGING_API_TOKEN="e673cd2401f6436b16a165066993532f3e2970be5531406d37ac8591220a00b3"
+  export HIGHBOND_PREPROD_API_TOKEN="f2f20b5cdd446282a5df145422117e439c1c771f3d791ee03fdc2774367ee7ea"
+  export HIGHBOND_PROD_API_TOKEN="733h8r8z45"
+
+  export GOPRIVATE=github.com/acl-services
+
+  alias ibrew="arch -x86_64 /usr/local/bin/brew"
+
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+  export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+  export LDFLAGS="-L/opt/homebrew/opt/postgresql@15/lib"
+  export CPPFLAGS="-I/opt/homebrew/opt/postgresql@15/include"
+  export PKG_CONFIG_PATH="/opt/homebrew/opt/postgresql@15/lib/pkgconfig"
+
+  export PATH="$PATH:$HOME/.pyenv/versions/2.7.18/bin"
+
+  export LDFLAGS="-L/usr/local/opt/v8@3.15/lib"
+  export CPPFLAGS="-I/usr/local/opt/v8@3.15/include"
+fi;
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
